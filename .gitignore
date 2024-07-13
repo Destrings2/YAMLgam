@@ -1,0 +1,14 @@
+.fleet/*
+deepdiff/*
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes
+._*
+.VolumeIcon.icns
+.metadata_never_index
+.fseventsd

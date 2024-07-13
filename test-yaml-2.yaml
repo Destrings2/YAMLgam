@@ -1,0 +1,52 @@
+company:
+  name: TechCorp
+  founded: 2005
+  employees: 550  # Different from file 1
+  departments:
+    - name: Engineering
+      head: John Doe
+      projects:
+        - name: Project A
+          budget: 1000000
+          team_size: 10
+        - name: Project C  # Different from file 1
+          budget: 750000
+          team_size: 8
+    - name: Sales  # Different from file 1
+      head: Bob Johnson
+      quota: 5000000
+products:
+  - name: Software X
+    version: 2.2  # Different from file 1
+    release_date: 2023-06-30  # Different from file 1
+    features:
+      - Advanced AI
+      - Cloud Integration
+      - Real-time Analytics
+      - Mobile Support  # Additional feature
+  - name: Service Z  # Different from file 1
+    launch_date: 2023-03-15
+    pricing:
+      basic: 99
+      pro: 199
+      enterprise: 499
+financial_data:
+  revenue: 12000000  # Different from file 1
+  expenses: 9000000  # Different from file 1
+  profit_margin: 0.25
+contact_info: &contact
+  address: "123 Tech Street, San Francisco, CA 94105"
+  phone: "+1 (555) 123-4567"
+  email: "info@techcorp.com"
+branch_offices:
+  - location: New York
+    <<: *contact
+    phone: "+1 (555) 987-6543"
+  - location: Tokyo  # Different from file 1
+    <<: *contact
+    address: "789 Tech Avenue, Tokyo, Japan 100-0004"
+    phone: "+81 3 1234 5678"
+certifications:  # New section
+  - ISO 9001
+  - ISO 27001
+  - CMMI Level 5

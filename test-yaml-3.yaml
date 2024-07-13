@@ -1,0 +1,58 @@
+company:
+  name: TechCorp
+  founded: 2005
+  employees: 600  # Different from files 1 and 2
+  departments:
+    - name: Engineering
+      head: Sarah Lee  # Different from files 1 and 2
+      projects:
+        - name: Project A
+          budget: 1000000
+          team_size: 10
+        - name: Project D  # Different from files 1 and 2
+          budget: 2000000
+          team_size: 15
+    - name: Research  # Different from files 1 and 2
+      head: Dr. Emily Chen
+      annual_budget: 3000000
+products:
+  - name: Software X
+    version: 3.0  # Different from files 1 and 2
+    release_date: 2023-12-31  # Different from files 1 and 2
+    features:
+      - Advanced AI
+      - Cloud Integration
+      - Real-time Analytics
+      - Blockchain Support  # Different from files 1 and 2
+  - name: IoT Platform  # Different from files 1 and 2
+    version: 1.5
+    supported_devices:
+      - smart_home
+      - industrial_sensors
+      - wearables
+financial_data:
+  revenue: 15000000  # Different from files 1 and 2
+  expenses: 11000000  # Different from files 1 and 2
+  profit_margin: 0.2667  # Different from files 1 and 2
+contact_info: &contact
+  address: "123 Tech Street, San Francisco, CA 94105"
+  phone: "+1 (555) 123-4567"
+  email: "info@techcorp.com"
+branch_offices:
+  - location: New York
+    <<: *contact
+    phone: "+1 (555) 987-6543"
+  - location: Berlin  # Different from files 1 and 2
+    <<: *contact
+    address: "101 Tech Platz, Berlin, Germany 10117"
+    phone: "+49 30 1234 5678"
+sustainability:  # New section
+  green_initiatives:
+    - solar_powered_offices
+    - e-waste_recycling_program
+  carbon_footprint:
+    2022: 10000
+    2023: 8500
+  goals:
+    - "Reduce carbon emissions by 50% by 2030"
+    - "100% renewable energy by 2035"

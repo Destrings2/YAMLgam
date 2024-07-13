@@ -1,0 +1,48 @@
+company:
+  name: TechCorp
+  founded: 2005
+  employees: 500
+  departments:
+    - name: Engineering
+      head: John Doe
+      projects:
+        - name: Project A
+          budget: 1000000
+          team_size: 10
+        - name: Project B
+          budget: 500000
+          team_size: 5
+    - name: Marketing
+      head: Jane Smith
+      budget: 750000
+products:
+  - name: Software X
+    version: 2.1
+    release_date: 2023-01-15
+    features:
+      - Advanced AI
+      - Cloud Integration
+      - Real-time Analytics
+  - name: Hardware Y
+    version: 1.0
+    release_date: 2022-11-30
+    specifications:
+      cpu: "Quad-core 2.5GHz"
+      memory: "16GB RAM"
+      storage: "1TB SSD"
+financial_data:
+  revenue: 10000000
+  expenses: 7500000
+  profit_margin: 0.25
+contact_info: &contact
+  address: "123 Tech Street, San Francisco, CA 94105"
+  phone: "+1 (555) 123-4567"
+  email: "info@techcorp.com"
+branch_offices:
+  - location: New York
+    <<: *contact
+    phone: "+1 (555) 987-6543"
+  - location: London
+    <<: *contact
+    address: "456 Tech Lane, London, UK SW1A 1AA"
+    phone: "+44 20 1234 5678"
